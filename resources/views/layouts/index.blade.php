@@ -51,12 +51,9 @@
     @include('components.sidebar')
 
 	<div class="main-container">
-		<div class="pd-ltr-20">
 
             @yield('content')
             
-            @include('components.footer')
-		</div>
 	</div>
 	<!-- js -->
 	<script src="{{asset('assets/vendors')}}/scripts/core.js"></script>
