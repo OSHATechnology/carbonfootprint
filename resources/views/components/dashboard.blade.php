@@ -8,9 +8,9 @@
             </div>
             <div class="col-md-8">
                 <h4 class="font-20 weight-500 mb-10 text-capitalize">
-                    Welcome back <div class="weight-600 font-30 text-blue">Johnny Brown!</div>
+                    Hallo <div class="weight-600 font-30 text-green">Carbon Footprint-ers!</div>
                 </h4>
-                <p class="font-18 max-width-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde hic non repellendus debitis iure, doloremque assumenda. Autem modi, corrupti, nobis ea iure fugiat, veniam non quaerat mollitia animi error corporis.</p>
+                <p class="font-18 max-width-600">The following is the calculation of the Carbon Footprint for car production activities. Please input the date, total production output and total energy consumption (BTU)</p>
             </div>
         </div>
     </div>
@@ -22,140 +22,131 @@
     <div class="pd-20 card-box mb-30">
         <div class="clearfix mb-20">
             <div class="pull-left">
-                <h4 class="text-blue h4">Basic Table</h4>
-                <p>Add class <code>.table</code></p>
+                <h4 class="text-green h4">Data</h4>
             </div>
-            <div class="pull-right">
-                <a href="#basic-table" class="btn btn-primary btn-sm scroll-click" rel="content-y"  data-toggle="collapse" role="button"><i class="fa fa-code"></i> Source Code</a>
-            </div>
+            
         </div>
         <table class="table">
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                    <th scope="col">Tag</th>
+                    <th scope="col">Shop/Emission</th>
+                    <th scope="col">Welding</th>
+                    <th scope="col">Painting</th>
+                    <th scope="col">Assy</th>
+                    <th scope="col">Press</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td><span class="badge badge-primary">Primary</span></td>
+                    <td>Electricity</td>
+                    <td>27,358.07 KWh</td>
+                    <td>19,333.33 KWh</td>
+                    <td>26,269.32 KWh</td>
+                    <td>20,751.02 KWh</td>
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td><span class="badge badge-secondary">Secondary</span></td>
+                    <td>Fuel</td>
+                    <td>9,491.52 L</td>
+                    <td>9,346.73 L</td>
+                    <td>3,970.87 L</td>
+                    <td>3,033.213 L</td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                    <td><span class="badge badge-success">Success</span></td>
+                    <td>Gas</td>
+                    <td>105,56 Kg</td>
+                    <td>124,3 Kg</td>
+                    <td>129,17 Kg</td>
+                    <td>65,28 Kg</td>
                 </tr>
             </tbody>
         </table>
-        <div class="collapse collapse-box" id="basic-table" >
-            <div class="code-box">
-                <div class="clearfix">
-                    <a href="javascript:;" class="btn btn-primary btn-sm code-copy pull-left"  data-clipboard-target="#basic-table-code"><i class="fa fa-clipboard"></i> Copy Code</a>
-                    <a href="#basic-table" class="btn btn-primary btn-sm pull-right" rel="content-y"  data-toggle="collapse" role="button"><i class="fa fa-eye-slash"></i> Hide Code</a>
-                </div>
-                <pre>
-                    <code class="xml copy-pre" id="basic-table-code">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </code>
-                </pre>
-            </div>
-        </div>
     </div>
+
     <div class="row">
-        <div class="col-xl-3 mb-30">
+        <div class="col-md-12 col-sm-12 mb-30">
+            <div class="card text-white bg-success card-box">
+                <div class="card-header">Carbon Footprint Calculation</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xl-6 mb-30">
             <div class="card-box height-100-p widget-style1">
                 <div class="d-flex flex-wrap align-items-center">
-                    <div class="progress-data">
-                        <div id="chart"></div>
-                    </div>
                     <div class="widget-data">
-                        <div class="h4 mb-0">2020</div>
-                        <div class="weight-600 font-14">Contact</div>
+                        <div class="h4 mb-20">Production Time</div>
+                        <div class="h5 font-14 production-time text-green" style="text-align:center"></div>
+                        <div class="weigth-400 font-14" style="text-align:center"><small class="text-muted">TonsCO2e</small></div>
+                        
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-xl-3 mb-30">
+        <div class="col-xl-6 mb-30">
             <div class="card-box height-100-p widget-style1">
                 <div class="d-flex flex-wrap align-items-center">
-                    <div class="progress-data">
-                        <div id="chart2"></div>
-                    </div>
                     <div class="widget-data">
-                        <div class="h4 mb-0">400</div>
-                        <div class="weight-600 font-14">Deals</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 mb-30">
-            <div class="card-box height-100-p widget-style1">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div class="progress-data">
-                        <div id="chart3"></div>
-                    </div>
-                    <div class="widget-data">
-                        <div class="h4 mb-0">350</div>
-                        <div class="weight-600 font-14">Campaign</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 mb-30">
-            <div class="card-box height-100-p widget-style1">
-                <div class="d-flex flex-wrap align-items-center">
-                    <div class="progress-data">
-                        <div id="chart4"></div>
-                    </div>
-                    <div class="widget-data">
-                        <div class="h4 mb-0">$6060</div>
-                        <div class="weight-600 font-14">Worth</div>
+                        <div class="h4 mb-20">Total Emission (per cylinder block)</div>
+                        <div class="h5 total-emission-cylinder-block text-green" style="text-align:center"></div>
+                        <div class="weigth-400 font-14" style="text-align:center"><small class="text-muted">TonsCO2e</small></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="card-group mb-30">
+        <div class="card card-box">
+            <div class="card-body">
+                <h5 class="card-title">Welding</h5>
+                <p class="card-text class-total-perproduk-welding"></p>
+                <p class="card-text total-emission-produk-welding"><small class="text-muted"></small></p>
+            </div>
+        </div>
+        <div class="card card-box">
+            <div class="card-body">
+                <h5 class="card-title">Painting</h5>
+                <p class="card-text class-total-perproduk-painting"></p>
+                <p class="card-text total-emission-produk-painting"><small class="text-muted"></small></p>
+            </div>
+        </div>
+        <div class="card card-box">
+            <div class="card-body">
+                <h5 class="card-title">Press</h5>
+                <p class="card-text class-total-perproduk-press"></p>
+                <p class="card-text total-emission-produk-press"><small class="text-muted"></small></p>
+            </div>
+        </div>
+        <div class="card card-box">
+            <div class="card-body">
+                <h5 class="card-title">Assy</h5>
+                <p class="card-text class-total-perproduk-assy"></p>
+                <p class="card-text total-emission-produk-assy"></p>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-6 mb-30">
             <div class="card-box height-100-p pd-20">
-                <h2 class="h4 mb-20">Lead Target</h2>
-                <div id="chart6"></div>
+                <h2 class="h4 mb-20">Actual vs Target Emission</h2>
+                <div id="chartLoadTarget"></div>
             </div>
         </div>    
         <div class="col-md-6 mb-30">
             <div class="pd-20 card-box height-100-p">
-                <h4 class="h4 text-blue">Radial Bar Chart</h4>
+                <h4 class="h4">Emission Product Comparison</h4>
                 <div id="chart9"></div>
             </div>
         </div>
     </div>
+
+    
     @include('components.footer')
 </div>
 @endsection

@@ -3,58 +3,48 @@
         <div class="pd-20 card-box mb-30">
             <div class="clearfix mb-20">
                 <div class="pull-left">
-                    <h4 class="text-blue h4">Input</h4>
+                    <h4 class="text-green h4">Input</h4>
                 </div>
                 <div class="pull-right">
-                    <a href="" class="btn btn-primary"> Refresh</a>
+                    <a href="#basic-table" class="btn btn-success btn-sm scroll-click reset" rel="content-y" data-toggle="collapse" role="button"><i class="icon-copy fa fa-refresh" aria-hidden="true"></i> Refresh</a>
+
                 </div>
             </div>
-            <form>
+            <form id="form-input">
                 <div class="row">
                     <div class=" col-md-6 col-sm-12">
                         <div class="form-group">
                             <label>Plants</label>
-                            <select class="custom-select2 form-control" name="state" style="width: 100%; height: 38px;">
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                    <option value="AK">Alaska</option>
-                                    <option value="HI">Hawaii</option>
-                                </optgroup>
-                                <optgroup label="Pacific Time Zone">
-                                    <option value="CA">California</option>
-                                    <option value="NV">Nevada</option>
-                                    <option value="OR">Oregon</option>
-                                    <option value="WA">Washington</option>
-                                </optgroup>
-                                <optgroup label="Mountain Time Zone">
-                                    <option value="AZ">Arizona</option>
-                                    <option value="CO">Colorado</option>
-                                    <option value="ID">Idaho</option>
-                                    <option value="MT">Montana</option>
-                                    <option value="NE">Nebraska</option>
-                                    <option value="NM">New Mexico</option>
-                                    <option value="ND">North Dakota</option>
-                                    <option value="UT">Utah</option>
-                                    <option value="WY">Wyoming</option>
+                            <select class="custom-select2 form-control name-of-plants" name="state" style="width: 100%; height: 38px;">
+                                <optgroup label="Select Plants">
+                                    <option value="AK">Plants 1</option>
+                                    <option value="HI">Plants 2</option>
                                 </optgroup>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Tanggal</label>
-                            <input class="form-control date-picker" placeholder="Select Date" type="text">
+                            <label>Date</label>
+                            <input class="form-control date-picker name-of-working-days" id="name-of-working-days" placeholder="Select Date" type="text">
                         </div>
                     </div>                        
                     <div class=" col-md-6 col-sm-12">
                         <div class="form-group">
-                            <label>Total konsumsi energi</label>
-                            <input class="form-control date-picker" placeholder="Select Date" type="number">
+                            <label>Total Energy Consumption</label>
+                            <input class="form-control name-of-consumption-energy" placeholder="Input Number" type="number">
                         </div>
                         <div class="form-group">
-                            <label>total produksi</label>
-                            <input class="form-control date-picker" placeholder="Select Date" type="number">
+                            <label>Total Production Output</label>
+                            <input class="form-control name-of-total-production-output" placeholder="Input Number" type="number">
                         </div>
                     </div>
                 </div>
             </form>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#basic-table" class="btn btn-success btn-calculate" type="button" style="width:100%"> <i class="icon-copy fa fa-calculator" aria-hidden="true"></i> Calculate</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
