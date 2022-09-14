@@ -35,7 +35,7 @@
 <body>
 	<div class="pre-loader">
 		<div class="pre-loader-box">
-			<div class="loader-logo"><img src="{{asset('assets/vendors')}}/images/deskapp-logo.svg" alt=""></div>
+			<div class="loader-logo"><img src="{{asset('assets/vendors')}}/images/osha.png" alt=""></div>
 			<div class='loader-progress' id="progress_div">
 				<div class='bar' id='bar1'></div>
 			</div>
@@ -66,6 +66,8 @@
 	<script src="{{asset('assets/src')}}/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
 	<script src="{{asset('assets/src')}}/plugins/datatables/js/dataTables.responsive.min.js"></script>
 	<script src="{{asset('assets/src')}}/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+	<script src="{{asset('assets/src')}}/plugins/highcharts-6.0.7/code/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-3d.js"></script>
 	<script src="{{asset('assets/src')}}/scripts/dashboard.js"></script>
 </body>
 </html>

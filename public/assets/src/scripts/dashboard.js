@@ -152,7 +152,7 @@ $('.btn-calculate').on('click', function() {
     $('.production-time').html(`${randomHours}h ${randomMinutes}m`);
     $('.total-emission-cylinder-block').html(`${(sumAll/11).toFixed(3)}`);
     
-    charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll)
+    charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll, resultKonversiEmisi)
 })
 
 function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll) {
@@ -263,9 +263,48 @@ function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumA
 
     var chart6 = new ApexCharts(document.querySelector("#chartLoadTarget"), options6);
     chart6.render();
-
-    var chart = new ApexCharts(document.querySelector("#chart9"), options9);
-    chart.render();
+    let diargamtoChart = {diagramWelding}
+    console.log(diagramWelding, diagramPainting, diagramPress, diagramAssy, diargamtoChart)
+    Highcharts.chart('chart9', {
+        chart: {
+            type: 'column'
+        },
+        xAxis: {
+            categories: [
+            'Welding',
+            'Painting',
+            'Press',
+            'Assy',
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Emission (TonsCO2e)'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} TonsCO2e</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Emission',
+            data: [parseFloat(diagramWelding), parseFloat(diagramPainting), parseFloat(diagramPress), parseFloat(diagramAssy)]
+    
+        },]
+    });
+    
 }
 
 function chart(diagramWelding = 0) {
