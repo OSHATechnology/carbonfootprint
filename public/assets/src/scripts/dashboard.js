@@ -151,11 +151,19 @@ $('.btn-calculate').on('click', function() {
     diagramPress = ((avgPress/sumAll)*100).toFixed(2);
     $('.production-time').html(`${randomHours}h ${randomMinutes}m`);
     $('.total-emission-cylinder-block').html(`${(sumAll/11).toFixed(3)}`);
+
+    var data = {
+        assy: avgAssy,
+        press: avgPress,
+        painting: avgPainting,
+        welding: avgWelding
+    }
     
-    charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll, resultKonversiEmisi)
+    console.log(data, 'data')
+    charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll, avgAssy, avgPainting, avgPress, avgWelding)
 })
 
-function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll) {
+function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll, avgAssy, avgPainting, avgPress, avgWelding) {
     var options9 = {
         series: [diagramWelding, diagramAssy, diagramPainting, diagramPress],
         chart: {
@@ -300,7 +308,7 @@ function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumA
         },
         series: [{
             name: 'Emission',
-            data: [parseFloat(diagramWelding), parseFloat(diagramPainting), parseFloat(diagramPress), parseFloat(diagramAssy)]
+            data: [parseFloat(avgWelding), parseFloat(avgPainting), parseFloat(avgPress), parseFloat(avgAssy)]
     
         },]
     });

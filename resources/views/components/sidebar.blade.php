@@ -88,7 +88,7 @@
             <ul id="accordion-menu">
                 
                 <li>
-                    <a href="/" class="dropdown-toggle no-arrow">
+                    <a href="/" class="dropdown-toggle no-arrow {{ Request::is('/') ? 'active' : '' }} ">
                         <span class="micon dw dw-calculator"></span><span class="mtext">Calculation CF</span>
                     </a>
                 </li>
