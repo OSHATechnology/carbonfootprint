@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/src')}}/plugins/datatables/css/dataTables.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/src')}}/plugins/datatables/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/vendors')}}/styles/style.css">
+	<link rel="stylesheet" type="text/css" href="{{asset('assets')}}/custom.css">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119386393-1"></script>
@@ -35,7 +36,9 @@
 <body>
 	<div class="pre-loader">
 		<div class="pre-loader-box">
-			<div class="loader-logo"><img src="{{asset('assets/vendors')}}/images/osha.png" alt=""></div>
+			<div class="loader-logo">
+				<img src="{{asset('assets/vendors')}}/images/toyota2.png" alt="">
+			</div>
 			<div class='loader-progress' id="progress_div">
 				<div class='bar' id='bar1'></div>
 			</div>

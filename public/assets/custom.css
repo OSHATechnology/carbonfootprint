@@ -1,0 +1,12 @@
+.pre-loader .loader-logo{
+    text-align: center;
+}
+.loader-logo img{
+    max-width: 20%;
+}
+.brand-logo a{
+    justify-content: center;
+}
+.brand-logo a img{
+    max-width: 70%;
+}
