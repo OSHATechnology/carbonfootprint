@@ -92,7 +92,25 @@ $('.reset').on('click', function() {
     document.getElementById("form-input").reset();
 })
 
+$('.name-of-plants').on('change', function() {
+     var id_plant = $('.name-of-plants').val()
+     changeData(id_plant)
+})
+
 $('.btn-calculate').on('click', function() {
+     var id_plant = $('.name-of-plants').val()
+     var hasil;
+
+     $.ajax({
+          url: '/getEmission/'+id_plant,
+          type: 'GET',
+          dataType: 'JSON',
+          async: false,
+          success: function(result) {
+               hasil = result;
+          }
+     })
+     
      $('.img-before-calculation').hide();
      $('.result-calculation').show();
     $('.class-welding').html('')
@@ -120,10 +138,10 @@ $('.btn-calculate').on('click', function() {
     resultAssy = 0;
     avgEmisi = (resultKonversiEmisi.batuBara + resultKonversiEmisi.bensin + resultKonversiEmisi.solar + resultKonversiEmisi.minyakTanah + resultKonversiEmisi.biomassa + resultKonversiEmisi.ethanol + resultKonversiEmisi.biodessel + resultKonversiEmisi.lpg + resultKonversiEmisi.kayuBakar) / 9; 
     for(let i = 0; i < welding.length; i++) {
-        resultWelding = resultWelding + (welding[i].value * avgEmisi);
-        resultPainting = resultPainting + (painting[i].value * avgEmisi);
-        resultAssy = resultAssy + (assy[i].value * avgEmisi);
-        resultPress = resultPress + (press[i].value * avgEmisi);
+        resultWelding = resultWelding + (hasil[i].welding * avgEmisi);
+        resultPainting = resultPainting + (hasil[i].painting * avgEmisi);
+        resultAssy = resultAssy + (hasil[i].assy * avgEmisi);
+        resultPress = resultPress + (hasil[i].press * avgEmisi);
     }
 
     avgAssy = (resultAssy/3)/1000;
@@ -160,7 +178,6 @@ $('.btn-calculate').on('click', function() {
         welding: avgWelding
     }
     
-    console.log(data, 'data')
     charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumAll, avgAssy, avgPainting, avgPress, avgWelding)
 })
 
@@ -794,3 +811,38 @@ $('document').ready(function(){
 		},
 	});
 });
+
+function changeData(id_plant)
+{
+     var x = 0;
+     $.ajax({
+          url: '/getEmission/'+id_plant,
+          type: 'GET',
+          dataType: 'JSON',
+          success: function(result) {
+               var x1 = document.getElementById("data-emission").rows[1];
+               var x2 = document.getElementById("data-emission").rows[2];
+               var x3 = document.getElementById("data-emission").rows[3];
+               
+               //baris 1
+               x1.cells[2].innerHTML = `${result[0].welding} ${result[0].satuan}`;
+               x1.cells[3].innerHTML = `${result[0].painting} ${result[0].satuan}`;
+               x1.cells[4].innerHTML = `${result[0].assy} ${result[0].satuan}`;
+               x1.cells[5].innerHTML = `${result[0].press} ${result[0].satuan}`;
+               
+               //baris 2
+               x1.cells[2].innerHTML = `${result[1].welding} ${result[0].satuan}`;
+               x1.cells[3].innerHTML = `${result[1].painting} ${result[0].satuan}`;
+               x1.cells[4].innerHTML = `${result[1].assy} ${result[0].satuan}`;
+               x1.cells[5].innerHTML = `${result[1].press} ${result[0].satuan}`;
+
+               //baris 3
+               x1.cells[2].innerHTML = `${result[2].welding} ${result[0].satuan}`;
+               x1.cells[3].innerHTML = `${result[2].painting} ${result[0].satuan}`;
+               x1.cells[4].innerHTML = `${result[2].assy} ${result[0].satuan}`;
+               x1.cells[5].innerHTML = `${result[2].press} ${result[0].satuan}`;
+          }
+     })
+     
+     
+}

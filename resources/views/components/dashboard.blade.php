@@ -26,7 +26,7 @@
             </div>
             
         </div>
-        <table class="table">
+        <table class="table dataTable" id="data-emission">
             <thead>
                 <tr>
                     <th scope="col">#</th>
@@ -38,15 +38,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Electricity</td>
-                    <td>27,358.07 KWh</td>
-                    <td>19,333.33 KWh</td>
-                    <td>26,269.32 KWh</td>
-                    <td>20,751.02 KWh</td>
-                </tr>
-                <tr>
+                 <?php $no = 1; ?>
+                 @foreach($data_emissions as $data)
+                    <tr>
+                         <th scope="row">{{$no}}</th>
+                         <td>{{$data->emission}}</td>
+                         <td>{{$data->welding}} {{$data->satuan}}</td>
+                         <td>{{$data->painting}} {{$data->satuan}}</td>
+                         <td>{{$data->assy}} {{$data->satuan}}</td>
+                         <td>{{$data->press}} {{$data->satuan}}</td>
+                    </tr>
+                    <?php $no++; ?>
+               @endforeach
+                <!-- <tr>
                     <th scope="row">2</th>
                     <td>Fuel</td>
                     <td>9,491.52 L</td>
@@ -61,7 +65,7 @@
                     <td>124,3 Kg</td>
                     <td>129,17 Kg</td>
                     <td>65,28 Kg</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>
