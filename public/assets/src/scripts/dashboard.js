@@ -1,4 +1,3 @@
-
 var totalConsumptionEnergy, totalProductionOutput, workingDays;
 var konversiEmisiValue = {
     batuBara  : 2.9,
@@ -94,6 +93,8 @@ $('.reset').on('click', function() {
 })
 
 $('.btn-calculate').on('click', function() {
+     $('.img-before-calculation').hide();
+     $('.result-calculation').show();
     $('.class-welding').html('')
     $('.class-painting').html('')
     $('.class-press').html('')
@@ -272,11 +273,13 @@ function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumA
     var chart6 = new ApexCharts(document.querySelector("#chartLoadTarget"), options6);
     chart6.render();
     let diargamtoChart = {diagramWelding}
-    console.log(diagramWelding, diagramPainting, diagramPress, diagramAssy, diargamtoChart)
     Highcharts.chart('chart9', {
         chart: {
             type: 'column'
         },
+        title: {
+		text: 'Chart Emission'
+	},
         xAxis: {
             categories: [
             'Welding',
@@ -308,7 +311,8 @@ function charts(diagramWelding, diagramAssy, diagramPainting, diagramPress, sumA
         },
         series: [{
             name: 'Emission',
-            data: [parseFloat(avgWelding), parseFloat(avgPainting), parseFloat(avgPress), parseFloat(avgAssy)]
+            data: [parseFloat(avgWelding), parseFloat(avgPainting), parseFloat(avgPress), parseFloat(avgAssy)],
+            color:'#FF0000',
     
         },]
     });

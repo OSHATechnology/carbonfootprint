@@ -76,8 +76,8 @@
 <div class="left-side-bar">
     <div class="brand-logo">
         <a href="/">
-            <img src="{{asset('assets/vendors')}}/images/toyota2.png" alt="" class="dark-logo">
-            <img src="{{asset('assets/vendors')}}/images/toyota2.png" alt="" class="light-logo">
+            <img src="{{asset('assets/src')}}/images/toyota-logo.png" alt="" class="dark-logo" style="height: 80%;width: auto;">
+            <img src="{{asset('assets/src')}}/images/toyota-logo.png" alt="" class="light-logo" style="height: 80%;width: auto;">
         </a>
         <div class="close-sidebar" data-toggle="left-sidebar-close">
             <i class="ion-close-round"></i>
