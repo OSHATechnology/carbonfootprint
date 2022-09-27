@@ -3,12 +3,12 @@
 <head>
 	<!-- Basic Page Info -->
 	<meta charset="utf-8">
-	<title>Calcuation Carbon Footprint</title>
+	<title>Calculation Carbon Footprint</title>
 
 	<!-- Site favicon -->
-	<link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/vendors')}}/images/toyota1.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/vendors')}}/images/toyota1.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/vendors')}}/images/toyota1.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets/vendors')}}/images/logopidi.jpeg">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets/vendors')}}/images/logopidi.jpeg">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/vendors')}}/images/logopidi.jpeg">
 
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -37,7 +37,7 @@
 	<div class="pre-loader">
 		<div class="pre-loader-box">
 			<div class="loader-logo">
-				<img src="{{asset('assets/src')}}/images/toyota-logo-loading.png" alt="">
+				<img src="{{asset('assets/vendors')}}/images/logopidi.jpeg" alt="">
 			</div>
 			<div class='loader-progress' id="progress_div">
 				<div class='bar' id='bar1'></div>
