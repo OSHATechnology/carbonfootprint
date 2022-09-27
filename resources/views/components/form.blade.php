@@ -50,7 +50,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <a href="#basic-table" class="btn btn-danger btn-calculate btn-larger" type="button"
-                        style="width:100%"> <i class="icon-copy fa fa-calculator" aria-hidden="true"></i> Calculate</a>
+                        style="width:100%;margin-top:40px;"> <i class="icon-copy fa fa-calculator"
+                            aria-hidden="true"></i> Calculate</a>
                 </div>
             </div>
         </div>

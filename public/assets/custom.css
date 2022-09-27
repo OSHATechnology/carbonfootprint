@@ -84,7 +84,7 @@
   }
 
   .form-group > label {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .form-control {
@@ -94,12 +94,12 @@
   }
 
   .datepicker {
-    width: 700px;
-    font-size: 40px;
+    width: 900px;
+    font-size: 45px;
   }
 
   .datepicker--cell {
-    margin: 15px 5px;
+    margin: 15px 0px;
   }
 
   .table thead th {
@@ -160,7 +160,7 @@
   } 
 
   .select2-container .select2-selection--single {
-    height: 90px;
+    height: 86px;
   }
 
   .select2-container--default .select2-selection--single {
@@ -175,7 +175,12 @@
   .select2-container--default .select2-selection--single .select2-selection__arrow b {
     border-width: 25px 20px 0 20px;
     margin-left: -50px;
-    margin-top: 6px;
+    margin-top: 11px;
+  }
+
+  .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-width: 25px 20px 25px 20px;
+    top: -3px;
   }
   
   .select2-container--default .select2-search--dropdown .select2-search__field {
@@ -188,11 +193,11 @@
   
   .select2-search--dropdown {
     padding: 10px;
-    font-size: 35px;
+    font-size: 45px;
   }
   
   .select2-results {
-    font-size: 35px;
+    font-size: 45px;
   }
 
   .table td, .table th {
@@ -232,6 +237,10 @@
     font-size: 45px;
     font-weight: 500;
     padding-top: 20px;
+  }
+
+  .mb-30 {
+    margin-bottom: 40px;
   }
 }
 
