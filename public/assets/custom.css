@@ -22,7 +22,7 @@
   }
 
   .brand-logo .light-logo {
-    transform: scale(2);
+    transform: scale(1.5);
     padding: 60px;
   }
 
@@ -197,6 +197,11 @@
 
   .table td, .table th {
     border-top: 5px solid #dee2e6;
+  }
+
+  .loader-logo img {
+    max-width: 100%;
+    margin-bottom: 50px;
   }
 
   .pre-loader .loader-progress {
