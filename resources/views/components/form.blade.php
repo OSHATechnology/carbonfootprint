@@ -17,8 +17,9 @@
                             <label>Plants</label>
                             <select class="custom-select2 form-control name-of-plants" name="state" style="width: 100%; height: 38px;">
                                 <optgroup label="Select Plants">
-                                    <option value="AK">Plants 1</option>
-                                    <option value="HI">Plants 2</option>
+                                     @foreach($data_plants as $plant)
+                                        <option value="{{$plant->id}}">{{$plant->plant}}</option>
+                                     @endforeach
                                 </optgroup>
                             </select>
                         </div>
