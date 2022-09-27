@@ -6,7 +6,9 @@
                     <h4 class="text-red-50 h4">Input</h4>
                 </div>
                 <div class="pull-right">
-                    <a href="#basic-table" class="btn btn-danger btn-sm scroll-click reset" rel="content-y" data-toggle="collapse" role="button"><i class="icon-copy fa fa-refresh" aria-hidden="true"></i> Refresh</a>
+                    <a href="#basic-table" class="btn btn-danger btn-sm scroll-click reset btn-larger" rel="content-y"
+                        data-toggle="collapse" role="button"><i class="icon-copy fa fa-refresh" aria-hidden="true"></i>
+                        Refresh</a>
 
                 </div>
             </div>
@@ -15,27 +17,31 @@
                     <div class=" col-md-6 col-sm-12">
                         <div class="form-group">
                             <label>Plants</label>
-                            <select class="custom-select2 form-control name-of-plants" name="state" style="width: 100%; height: 38px;">
+                            <select class="custom-select2 form-control name-of-plants" name="state"
+                                style="width: 100%; height: 180px;">
                                 <optgroup label="Select Plants">
-                                     @foreach($data_plants as $plant)
-                                        <option value="{{$plant->id}}">{{$plant->plant}}</option>
-                                     @endforeach
+                                    @foreach ($data_plants as $plant)
+                                        <option value="{{ $plant->id }}">{{ $plant->plant }}</option>
+                                    @endforeach
                                 </optgroup>
                             </select>
                         </div>
                         <div class="form-group">
                             <label>Date</label>
-                            <input class="form-control date-picker name-of-working-days" id="name-of-working-days" placeholder="Select Date" type="text">
+                            <input class="form-control date-picker name-of-working-days" id="name-of-working-days"
+                                placeholder="Select Date" type="text">
                         </div>
-                    </div>                        
+                    </div>
                     <div class=" col-md-6 col-sm-12">
                         <div class="form-group">
                             <label>Total Energy Consumption</label>
-                            <input class="form-control name-of-consumption-energy" placeholder="Input Number" type="number">
+                            <input class="form-control name-of-consumption-energy" placeholder="Input Number"
+                                type="number">
                         </div>
                         <div class="form-group">
                             <label>Total Production Output</label>
-                            <input class="form-control name-of-total-production-output" placeholder="Input Number" type="number">
+                            <input class="form-control name-of-total-production-output" placeholder="Input Number"
+                                type="number">
                         </div>
                     </div>
                 </div>
@@ -43,7 +49,8 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#basic-table" class="btn btn-danger btn-calculate" type="button" style="width:100%"> <i class="icon-copy fa fa-calculator" aria-hidden="true"></i> Calculate</a>
+                    <a href="#basic-table" class="btn btn-danger btn-calculate btn-larger" type="button"
+                        style="width:100%"> <i class="icon-copy fa fa-calculator" aria-hidden="true"></i> Calculate</a>
                 </div>
             </div>
         </div>

@@ -11,6 +11,224 @@
     max-width: 70%;
 }
 
+@media (min-width:3840px) {
+  .left-side-bar {
+    width: 15%;
+  }
+
+  .brand-logo {
+    width: 100%;
+    height: auto;
+  }
+
+  .brand-logo .light-logo {
+    transform: scale(2);
+    padding: 60px;
+  }
+
+  .sidebar-menu .dropdown-toggle {
+    font-size: 50px;
+    padding-left: 160px;
+  }
+
+  .sidebar-menu .dropdown-toggle .micon {
+    left: 90px;
+    font-size: 50px;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-left, .header-right {
+    height: 100%;
+  }
+
+  .user-info-dropdown .dropdown-toggle {
+    padding: 45px 0;
+    padding-right: 0px;
+    font-size: 50px;
+    padding-right: 50px
+  }
+
+  .user-info-dropdown .dropdown-toggle .user-icon {
+    width: 109px;
+    height: auto;
+  }
+
+  .main-container {
+    padding: 0 30px 0 0;
+    padding-top: 6%;
+    padding-left: 16%;
+  }
+
+  .font-30 {
+    font-size: 70px;
+  }
+
+  .font-18 {
+    font-size: 46px;
+  }
+
+  .max-width-600 {
+    max-width: 89%;
+  }
+  
+  .h4 {
+    font-size: 60px;
+  }
+
+  .btn-larger {
+    font-size: 50px;
+  }
+
+  .form-group > label {
+    font-size: 40px;
+  }
+
+  .form-control {
+    font-size: 45px;
+    padding: 40px 10px;
+    border: 3px solid #ced4da;
+  }
+
+  .datepicker {
+    width: 700px;
+    font-size: 40px;
+  }
+
+  .datepicker--cell {
+    margin: 15px 5px;
+  }
+
+  .table thead th {
+    font-size: 45px;
+  }
+
+  .table th {
+    font-size: 50px;
+  }
+
+  .table td {
+    font-size: 45px;
+  }
+
+  .card-header {
+    font-size: 50px;
+  }
+
+  .card-title {
+    font-size: 60px;
+  }
+
+  .widget-style1 .widget-data {
+    padding-bottom: 100px;
+  }
+
+  .h5 {
+    font-size: 80px;
+  }
+
+  .small {
+    font-size: 40px;
+  }
+
+  .font-14 {
+    font-size: 80px;
+    line-height: 1em;
+  }
+
+  .card-text {
+    font-size: 50px;
+  }
+
+  .apexcharts-svg {
+    transform: scale(2.5) translateY(250px);
+  }
+
+  tspan {
+    font-size: 35px;
+  }
+
+  .footer-wrap {
+    font-size: 40px;
+  }
+
+  .card-box {
+    overflow: hidden;
+  } 
+
+  .select2-container .select2-selection--single {
+    height: 90px;
+  }
+
+  .select2-container--default .select2-selection--single {
+    border: 3px solid #ced4da;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 45px;
+    padding-top: 20px;
+  }
+  
+  .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-width: 25px 20px 0 20px;
+    margin-left: -50px;
+    margin-top: 6px;
+  }
+  
+  .select2-container--default .select2-search--dropdown .select2-search__field {
+    border: 3px solid #aaa;
+  }
+  
+  .select2-container--default .select2-results > .select2-results__options {
+    max-height: 500px;
+  }
+  
+  .select2-search--dropdown {
+    padding: 10px;
+    font-size: 35px;
+  }
+  
+  .select2-results {
+    font-size: 35px;
+  }
+
+  .table td, .table th {
+    border-top: 5px solid #dee2e6;
+  }
+
+  .pre-loader .loader-progress {
+    height: 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    background: #ecf0f4;
+    overflow: hidden;
+  }
+
+  .pre-loader .bar {
+    width: 0%;
+    height: 100%;
+    display: block;
+    background: #FF0000;
+  }
+
+  .pre-loader .percent {
+    text-align: center;
+    font-size: 45px;
+    display: none;
+  }
+
+  .pre-loader .loading-text {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+}
 
 @media (min-width:1301px) and (max-width:1400px){
   .header{
