@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('emisis', function (Blueprint $table) {
             $table->id();            
             $table->string('emission',20);
+            $table->string('satuan',5);
             $table->timestamps();
         });
     }
